@@ -1,0 +1,301 @@
+<!doctype html>
+<meta charset="utf-8">
+<!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway|Bitter|Oxygen|Arvo|Roboto+Slab' rel='stylesheet' type='text/css'>
+  
+<!--dge site link-->
+<!--http://dge.upd.edu.ph/philgeos2016-->
+
+<!-- Fontawesome -->
+<link rel="stylesheet" href="/static/bower_components/font-awesome/css/font-awesome.min.css" />
+
+<!--Scroll-->
+<link rel="stylesheet" type="text/css" href="/static/scrolling-nav.css">
+
+<!-- Styles - Bower -->
+<link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap-material-design/dist/css/ripples.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/bower_components/leaflet/dist/leaflet.css"/>
+
+<!-- Other Styles -->
+<link rel="stylesheet" type="text/css" href="/static/timelined/css/timeline.css">
+
+<link rel="stylesheet" href="./static/style.css">
+<!-- <link rel="stylesheet" type="text/css" href='/static/css/style.css'/> -->
+
+<title>PHILGEOS 2016</title>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav id="pgNav" class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation"> 
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.html">PHILGEOS 2016</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active">
+                  <a class="page-scroll" href="#intro-header">Home</a>
+              </li>
+              <li id="liAbstract" class="" >
+                  <a class="page-scroll" href="#themeDesc">Submit Abstract</a>
+              </li>
+              <li class="">
+                  <a class="page-scroll" href="#track_session">Tracks & Special Sessions</a>
+              </li>
+              <li class="">
+                  <a class="page-scroll" href="#sTracks">Important Dates</a>
+              </li>
+              <li class="">
+                  <a class="page-scroll" href="#venue">Venue</a>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="mainHead">
+    <div class="container-fluid" id="intro-header">
+        <div class="row" id="announceDiv">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <center>
+    					<h1 id="pgTitle">5<sup>th</sup> Philippine Geomatics Symposium</h1>
+    					<h4>April 20-22, 2016</h4>
+    					<h4 id="venueName"><a href="#venue">University of the Philippines Diliman</a></h4>
+    				</center>
+    				<hr>
+					<br>
+                	<h1>Call for Abstracts</h1>
+                	<p class="absText">Extended Abstract submission is now open.</p>
+                    <p class="absText">The abstract sample with the required formatting can be found <a id="linkSample">here.</a></p>
+                    <p class="absText">Deadline of submission is on March 23, 2016.</p>
+                	<br>
+                	<br>
+                	<span class="subheading">THEME</span>
+                    <h3> Strengthening Geomatics Applications through Advanced Space Science and Technology</h3>
+                    <p id="themeDesc">Short description here about the theme of this year's PHILGEOS. Short description here about the theme of this year's PHILGEOS. Short description here about the theme of this year's PHILGEOS. Short description here about the theme of this year's PHILGEOS.</p>
+                    <br>
+                    <div href="javascript:void(0)" id="submitBtn" class="btn btn-raised btn-default">Submit Abstract  <i class="fa fa-angle-down fa-lg"></i><div class="ripple-container"></div></div>
+            	</div>
+        </div>
+    </div>
+</header>
+
+
+<div id="track_session" class="container-fluid">
+	<div class="row">
+		<h2 id='tracksTitle'>Tracks and Special Sessions</h2>
+	</div>
+    <div id="rTracks" class="row">
+        <div id="rs" class="col-md-3 tracks">
+        	<div class="row rTracks">
+        		<center>
+        			<h3>Remote Sensing</h3>
+        		</center>
+        	</div>
+        </div>
+        <div id="gis" class="col-md-3 tracks">
+        	<div class="row rTracks">
+        		<center>
+        			<h3>Geographic Information System</h3>
+        		</center>
+        	</div>
+        </div>
+        <div id="lidar" class="col-md-3 tracks">
+        	<div class="row rTracks">
+        		<center>
+        			<h3>LiDAR</h3>
+        		</center>
+        	</div>
+        </div>
+        <div id="gnss" class="col-md-3 tracks">
+        	<div class="row rTracks">
+        		<center>
+        			<h3>GNSS</h3>
+        		</center>
+        	</div>
+        </div>
+    </div>
+    <div id="oTrack" class="row">
+        <div id="oapps" class="col-md-12 tracks">
+        	<div class="row oaTrack">
+        		<center>
+        			<h3>Other Applications</h3>
+        		</center>
+        	</div>
+        </div>
+    </div>
+    <div id="sTracks" class="row">
+        <div id="gnssEx" class="col-md-4 tracks">
+        	<div class="row ssTracks">
+        		<center>
+        			<h3>GNSS Experiments</h3>
+        		</center>
+        	</div>
+        </div>
+        <div id="micro" class="col-md-4 tracks">
+        	<div class="row ssTracks">
+        		<center>
+        			<h3>PHL-MICROSAT</h3>
+        		</center>
+        	</div>
+        </div>
+        <div id="geod" class="col-md-4 tracks">
+        	<div class="row ssTracks">
+        		<center>
+        			<h3>Geodynamics</h3>
+        		</center>
+        	</div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br id="track_date">
+
+<div id="dates" class="container-fluid">
+	<div class="container">
+	<h2 id="datesTitle" class="text-center">Important Dates</h2>
+		<div class="timeline timeline-with-arrows blue-yellow-yellow">
+			<div class="timeline-block">
+				<div id="callTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-bullhorn fa-2x"></i></div>
+				<div class="timeline-content">
+					<h3 class="text-center"><b>Call for Extended Abstracts</b></h3>
+					<div class="timeline-date"><h4>February 23, 2016</h4></div>
+				</div>
+			</div>
+			<div class="timeline-block">
+				<div id="deadTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-hourglass-end fa-2x"></i></div>
+				<div class="timeline-content">
+					<h3 class="text-center"><b>Deadline of Abstract Submission</b></h3>
+					<div class="timeline-date"><h4>March 23, 2016</h4></div>
+				</div>
+			</div>
+			<div class="timeline-block">
+				<div id="notTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-check fa-2x"></i></div>
+				<div class="timeline-content">
+					<h3 class="text-center"><b>Notice of Acceptance</b></h3>
+					<div class="timeline-date"><h4>March 30, 2016</h4></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="venue" class="row">
+    <div id="venueBuild" class="col-sm-6">
+    <div class="row venuePic">
+    	<center>
+    		<h3>University of the Philippines Diliman <br>April 20-22, 2016</h3>
+    	</center>	
+    </div>
+    </div>
+    <div id="map" class="col-sm-6"></div>
+</div>
+
+
+<div id="contact" class="row">
+	<center>
+		<h3>MH 216, Department of Geodetic Engineering, College of Engineering, University of the Philippines Diliman</h3>
+		<h4><i class="fa fa-phone"></i> +63-2-9818500 local 3124 / +63-3-920-8924 </h4>
+		<h4><i class="fa fa-envelope"></i> philgeos2016@gmail.com</h4>
+		<img id="imgContact" class="img-responsive" src="images/dgelogo.png">
+    </center>	
+</div>
+
+
+<div class="container-fluid">
+	<hr id="hrFooter">
+	<footer class="footer">
+      <div class="container">
+        	<p class="text-muted pull-left">&copy; PHILGEOS 2016 <span class="text-muted">by philshore</span></p>
+            <p id="imageSources" class="text-muted pull-right">Image sources</p>
+      </div>
+    </footer>
+</div>
+
+
+</body>
+
+<script type="text/javascript" src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script type="text/javascript" src="/static/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+<script type="text/javascript" src="/static/bower_components/leaflet/dist/leaflet.js"></script>
+<script type="text/javascript" src="/static/scrolling-nav.js"></script>
+<script type="text/javascript" src="/static/jquery.easing.min.js"></script>
+
+<script type="text/javascript">
+        //initialize material design 
+        $.material.init();
+
+        //scroll navbar effect
+        $(window).scroll(function(){
+
+          var scroll = $(window).scrollTop();
+
+          if (scroll > 200 ) {
+            $('nav').css('background-color','rgba(12, 12, 12, 1.0)');
+          }
+
+          if (scroll <= 200 ) {
+            $('nav').css('background-color','rgba(12, 12, 12,0.5)');
+         }
+
+        });
+
+      //venue map
+      var OpenStreetMap_France = L.tileLayer('http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; Openstreetmap France | &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      });
+       var map = L.map('map', {
+           zoomControl: true,
+           zoom: 18,
+           maxZoom: 19,
+           minZoom: 5,
+           keyboardPanOffset: 0,
+           scrollWheelZoom:false
+       });
+       map.setView([14.656487159193421, 121.06958001852037], 16);
+
+       var basemap = OpenStreetMap_France;
+       map.addLayer(basemap);
+
+       var marker= L.marker([14.656487159193421, 121.06958001852037]);
+       marker.addTo(map);
+
+    $("#venueBuild").on("mouseover",function(){
+      map.setZoom(18);
+    });
+
+    $("#submitBtn").on('click', function(){
+      window.open("https://script.google.com/macros/s/AKfycbwUMCKiRNq206lSPEpg-rcFJOcKtZB101tzDbp4gUyL55XtE9eg/exec","_self");
+    });
+
+    $("#liAbstract").on('click', function(){
+      window.open("https://script.google.com/macros/s/AKfycbwUMCKiRNq206lSPEpg-rcFJOcKtZB101tzDbp4gUyL55XtE9eg/exec","_self");
+    });
+
+    $("#linkSample").on('click',function(){
+      window.open("https://drive.google.com/file/d/0BzYNDl7Syp7hSGxJaUVPN2d5c2c/view?usp=sharing");
+    });
+
+</script>
+

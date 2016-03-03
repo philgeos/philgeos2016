@@ -1,0 +1,161 @@
+<!doctype html>
+<meta charset="utf-8">
+<!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway|Bitter|Oxygen|Arvo|Roboto+Slab' rel='stylesheet' type='text/css'>
+  
+<!--dge site link-->
+<!--http://dge.upd.edu.ph/philgeos2016-->
+
+<!-- Fontawesome -->
+<link rel="stylesheet" href="/static/bower_components/font-awesome/css/font-awesome.min.css" />
+
+<!--Scroll-->
+<link rel="stylesheet" type="text/css" href="/static/scrolling-nav.css">
+
+<!-- Styles - Bower -->
+<link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/bower_components/bootstrap-material-design/dist/css/ripples.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/bower_components/leaflet/dist/leaflet.css"/>
+
+<!-- Other Styles -->
+<link rel="stylesheet" type="text/css" href="/static/timelined/css/timeline.css">
+
+<link rel="stylesheet" href="../../static/style.css">
+<!-- <link rel="stylesheet" type="text/css" href='/static/css/style.css'/> -->
+
+<title>PHILGEOS 2016</title>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav id="pgNav" class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation"> 
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.html">PHILGEOS 2016</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active">
+                  <a class="page-scroll" href="#intro-header">Home</a>
+              </li>
+              <li id="liAbstract" class="" >
+                  <a class="page-scroll" href="#themeDesc">Submit Abstract</a>
+              </li>
+              <li class="">
+                  <a class="page-scroll" href="#track_session">Tracks & Special Sessions</a>
+              </li>
+              <li class="">
+                  <a class="page-scroll" href="#sTracks">Important Dates</a>
+              </li>
+              <li class="">
+                  <a class="page-scroll" href="#venue">Venue</a>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+  
+  <div class="blog-post">
+  
+    <h2>Hello Website</h2>
+  
+  <p class="meta">
+    written by
+    
+      tidaldev
+    
+    on 2016-02-20
+  </p>
+  <p>This is an example blog post.  Not much here but that's not the point :)</p>
+
+  </div>
+
+
+<br>
+<br id="track_date">
+
+
+
+
+
+</body>
+
+<script type="text/javascript" src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script type="text/javascript" src="/static/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+<script type="text/javascript" src="/static/bower_components/leaflet/dist/leaflet.js"></script>
+<script type="text/javascript" src="/static/scrolling-nav.js"></script>
+<script type="text/javascript" src="/static/jquery.easing.min.js"></script>
+
+<script type="text/javascript">
+        //initialize material design 
+        $.material.init();
+
+        //scroll navbar effect
+        $(window).scroll(function(){
+
+          var scroll = $(window).scrollTop();
+
+          if (scroll > 200 ) {
+            $('nav').css('background-color','rgba(12, 12, 12, 1.0)');
+          }
+
+          if (scroll <= 200 ) {
+            $('nav').css('background-color','rgba(12, 12, 12,0.5)');
+         }
+
+        });
+
+      //venue map
+      var OpenStreetMap_France = L.tileLayer('http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; Openstreetmap France | &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      });
+       var map = L.map('map', {
+           zoomControl: true,
+           zoom: 18,
+           maxZoom: 19,
+           minZoom: 5,
+           keyboardPanOffset: 0,
+           scrollWheelZoom:false
+       });
+       map.setView([14.656487159193421, 121.06958001852037], 16);
+
+       var basemap = OpenStreetMap_France;
+       map.addLayer(basemap);
+
+       var marker= L.marker([14.656487159193421, 121.06958001852037]);
+       marker.addTo(map);
+
+    $("#venueBuild").on("mouseover",function(){
+      map.setZoom(18);
+    });
+
+    $("#submitBtn").on('click', function(){
+      window.open("https://script.google.com/macros/s/AKfycbwUMCKiRNq206lSPEpg-rcFJOcKtZB101tzDbp4gUyL55XtE9eg/exec","_self");
+    });
+
+    $("#liAbstract").on('click', function(){
+      window.open("https://script.google.com/macros/s/AKfycbwUMCKiRNq206lSPEpg-rcFJOcKtZB101tzDbp4gUyL55XtE9eg/exec","_self");
+    });
+
+    $("#linkSample").on('click',function(){
+      window.open("https://drive.google.com/file/d/0BzYNDl7Syp7hSGxJaUVPN2d5c2c/view?usp=sharing");
+    });
+
+</script>
+
