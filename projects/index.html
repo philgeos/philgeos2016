@@ -1,5 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
 <!-- Material Design fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -39,25 +40,82 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="index.html">PHILGEOS 2016</a>
+            <a class="navbar-brand page-scroll" href="index.html"><img id="pglogo" src="/images/pglogo.png" alt="PHILGEOS 2016"><span id="pglogoname" >PHILGEOS 2016</span></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active">
-                  <a class="page-scroll" href="#intro-header">Home</a>
+              <li class="dropdown">
+                <a aria-expanded="true" href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">PhilGEOS 2016
+                  <b class="caret"></b>
+                  <div class="ripple-container"></div>
+                </a>
+                <ul id="pg16_dropdown" class="dropdown-menu">
+                  <li>
+                    <a class="page-scroll" href="#about">
+                      About PhilGEOS
+                    <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="submitBtn">
+                      Submit Abstract
+                    </a>
+                    <div class="ripple-container"></div>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#regBtn">
+                      Register
+                    </a>
+                    <div class="ripple-container"></div>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a class="page-scroll" href="#dates">
+                      Important dates
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#rates">
+                      Rates
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#venue">
+                      Venue
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li id="liAbstract" class="" >
-                  <a class="page-scroll" href="#themeDesc">Submit Abstract</a>
+              <li id="program_dropdown" class="dropdown">
+                <a aria-expanded="true" href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Program
+                  <b class="caret"></b>
+                  <div class="ripple-container"></div>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="page-scroll" href="javascript:void(0)">Tentative Program
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="javascript:void(0)">Speakers</a>
+                    <div class="ripple-container"></div>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="track_session">Tracks and Special Sessions</a>
+                    <div class="ripple-container"></div>
+                  </li>
+                </ul>
               </li>
               <li class="">
-                  <a class="page-scroll" href="#track_session">Tracks & Special Sessions</a>
+                  <a class="page-scroll" href="#Sponsors">Sponsors</a>
               </li>
               <li class="">
-                  <a class="page-scroll" href="#sTracks">Important Dates</a>
+                  <a class="page-scroll" href="#other_events">Related Events</a>
               </li>
               <li class="">
-                  <a class="page-scroll" href="#venue">Venue</a>
+                  <a class="page-scroll" href="#contact">Contact</a>
               </li>
             </ul>
         </div>
@@ -84,24 +142,126 @@
                 	<p class="absText">Extended Abstract submission is now open.</p>
                     <p class="absText">The abstract sample with the required formatting can be found <a id="linkSample">here.</a></p>
                     <p class="absText">Deadline of submission is on March 23, 2016.</p>
+                    <br>
+                    <div href="javascript:void(0)" id="submitBtn" class="btn btn-raised btn-default">Submit Abstract <i class="fa fa-angle-down fa-lg"></i>
+                        <div class="ripple-container"></div>
+                    </div>
                 	<br>
-                	<br>
+                    <br>
                 	<span class="subheading">THEME</span>
                     <h3> Strengthening Geomatics Applications through Advanced Space Science and Technology</h3>
-                    <p id="themeDesc">Short description here about the theme of this year's PHILGEOS. Short description here about the theme of this year's PHILGEOS. Short description here about the theme of this year's PHILGEOS. Short description here about the theme of this year's PHILGEOS.</p>
-                    <br>
-                    <div href="javascript:void(0)" id="submitBtn" class="btn btn-raised btn-default">Submit Abstract  <i class="fa fa-angle-down fa-lg"></i><div class="ripple-container"></div></div>
+                    <p id="themeDesc">On its 5th year, PhilGEOS 2016 will once again gather the members of the Philippine Geomatics community to meet, discuss and exchange knowledge and insights on the role of space science and technology in geomatics and its applications. To be held on April 20-22, 2016, and revolving around the theme “Strengthening Geomatics Applications through Advanced Space Science and Technology”, PhilGEOS 2016 is aimed at establishing a powerful academe-government-industry connection, facilitate idea exchange and encourage research and development on how advances in space science and technology will benefit the geomatics community.</p>
+                    <div href="javascript:void(0)" id="regBtn" class="btn btn-raised btn-default">Register Here   <i class="fa fa-angle-down fa-lg"></i><div class="ripple-container"></div>
+                    </div>
             	</div>
         </div>
     </div>
 </header>
 
 
+<div id="about" class="row">
+    <div id="about_op" class="container-fluid">
+    <h2 id='aboutTitle'>About PhilGEOS</h2>
+    <p>The University of the Philippines Department of Geodetic Engineering (UP DGE) and the UP Training Centre for Applied Geodesy and Photogrammetry (UP TCAGP) have been organising the Philippine Geomatics Symposium  or PhilGEOS since 2012. It was envisioned to be a yearly national symposium for Geomatics educators, researchers, practitioners and all users of geospatial data and technology.</p>
+    <p>PhilGEOS was first staged in November 2012 (PhilGEOS 2012) with the theme <a href="https://philgeos2012.wordpress.com/">“Philippine Geomatics: Practice, Application and Accomplishments”</a>. Last year, PhilGEOS had two special symposiums - <a href="http://dge.upd.edu.ph/philgeos2015/">PhilGEOS GNSS (Global Navigation Satellite Systems) and PhilGEOS UAS (Unmanned Aerial Systems Mapping)</a>. The two focused symposiums aimed at disseminating GNSS and UAS related studies and applications.</p>
+    </div>
+</div>
+
+<br id="track_date">
+
+<div id="dates" class="container-fluid">
+	<div class="container dates_rates">
+    <div class="col-md-6">
+	<h2 id="datesTitle" class="text-center">Important Dates</h2>
+		<div class="timeline timeline-with-arrows blue-yellow-yellow">
+			<div class="timeline-block">
+				<div id="callTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-bullhorn fa-2x"></i></div>
+				<div class="timeline-content">
+					<h3 class="text-center">Call for Extended Abstracts</h3>
+					<div class="timeline-date"><h4>February 23, 2016</h4></div>
+				</div>
+			</div>
+			<div class="timeline-block">
+				<div id="deadTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-hourglass-end fa-2x"></i></div>
+				<div class="timeline-content">
+					<h3 class="text-center">Deadline of Abstract Submission</h3>
+					<div class="timeline-date"><h4>March 23, 2016</h4></div>
+				</div>
+			</div>
+			<div class="timeline-block">
+				<div id="notTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-check fa-2x"></i></div>
+				<div class="timeline-content">
+					<h3 class="text-center">Notice of Acceptance</h3>
+					<div class="timeline-date"><h4>March 30, 2016</h4></div>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div id="rates" class="col-md-6">
+            <h2 id="ratesTitle" class="text-center">Rates</h2>
+            <div class="col-md-4 ratesDiv">
+                <div id="ebi" class="well">
+                    <h4 class="text-center"><strong>EARLY BIRD </strong></h4>
+                    <div class="row rateDays text-center">
+                        <p><strong>1 DAY</strong> - Php 1,200.00</p>
+                        <p><strong>2 DAYS</strong> - Php 2,000.00</p>    
+                    </div>
+                    <button id="ebi_btn" type="button" class="rate_reg btn btn-success">Register</button>
+                </div>
+                <p class="text-center"><i>*until March 23, 2016</i></p>
+            </div>
+            <div class="col-md-4 ratesDiv">
+                <div id="reg" class="well">
+                    <h4 class="text-center"><strong>REGULAR</strong></h4>
+                    <div class="row rateDays text-center">
+                        <p><strong>1 DAY</strong> - Php 1,500.00</p>
+                        <p><strong>2 DAYS</strong> - Php 2,500.00</p>  
+                    </div>
+                    <button id="reg_btn" type="button" class="rate_reg btn btn-success">Register</button>
+                </div>
+            </div>
+            <div class="col-md-4 ratesDiv">
+                <div id="und" class="well">
+                    <h4 class="text-center"><strong>Undergraduate Student</strong></h4>
+                    <div class="row rateDays text-center">
+                        <p><strong>1 DAY</strong> - Php 1,200.00</p>
+                        <p><strong>2 DAYS</strong> - Php 2,000.00</p>    
+                    </div>
+                    <button id="und_btn" type="button" class="rate_reg btn btn-success">Register</button>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+<div id="venue" class="row">
+    <div id="venueBuild" class="col-sm-6">
+    <div class="row venuePic">
+    	<center>
+    		<h3>University of the Philippines Diliman <br>April 20-22, 2016</h3>
+    	</center>	
+    </div>
+    </div>
+    <div id="map" class="col-sm-6"></div>
+</div>
+
+
 <div id="track_session" class="container-fluid">
 	<div class="row">
+        <center>
 		<h2 id='tracksTitle'>Tracks and Special Sessions</h2>
+        </center>
 	</div>
-    <div id="rTracks" class="row">
+   <!--  <div id="rTracks" class="row">
+        <div id="oapps" class="col-md-12 tracks">
+            <div class="row oaTrack">
+                <center>
+                    <h3>Synergy of Space Technology and Geomatics in real world
+        applications</h3>
+                </center>
+            </div>
+        </div>
         <div id="rs" class="col-md-3 tracks">
         	<div class="row rTracks">
         		<center>
@@ -131,20 +291,11 @@
         	</div>
         </div>
     </div>
-    <div id="oTrack" class="row">
-        <div id="oapps" class="col-md-12 tracks">
-        	<div class="row oaTrack">
-        		<center>
-        			<h3>Other Applications</h3>
-        		</center>
-        	</div>
-        </div>
-    </div>
     <div id="sTracks" class="row">
-        <div id="gnssEx" class="col-md-4 tracks">
-        	<div class="row ssTracks">
+        <div id="oapps" class="col-md-12 tracks">
+            <div class="row oaTrack">
         		<center>
-        			<h3>GNSS Experiments</h3>
+        			<h3>Developments in Space and Satellite Technology for Geomatics</h3>
         		</center>
         	</div>
         </div>
@@ -163,52 +314,58 @@
         	</div>
         </div>
     </div>
+    <div id="oTrack" class="row">
+        <div id="oapps" class="col-md-12 tracks">
+            <div class="row oaTrack">
+                <center>
+                    <h3>Other geospatial science and technology</h3>
+                </center>
+            </div>
+        </div>
+    </div> -->
+
+        <div id="synergy" class="col-md-4 well sessions">
+            <center>
+                <h3>Synergy of Space Technology and Geomatics in real world applications</h3>
+            </center>
+            <ul class="topics">
+                <li>Disaster Risk Reduction and Climate Studies</li>
+                <li>Agriculture and Forestry</li>
+                <li>Renewable Energy Resources</li>
+                <li>Coastal and Marine Applications</li>
+                <li>Hydrology and water Resources</li>
+                <li>Other Applications</li>
+            </ul> 
+        </div>
+        <div id="space" class="col-md-4 well sessions">
+            <center>
+                <h3>Developments in Space and Satellite Technology for Geomatics</h3>
+            </center>
+            <ul class="topics">
+                <li>Processing and Algorithm Development</li>
+                <li>New Platforms and Aquisition Technologies</li>
+                <li>Satellite Geodesy</li>
+                <li>Special Session:Phl-Microsat</li>
+                <li>Special Session: Multi GNSS</li>
+                <li>Other Developments</li>
+            </ul>  
+        </div>
+        <div id="other" class="col-md-4 well sessions">
+            <center>
+                <h3>Other Geospatial Science and Technology</h3>
+            </center>
+            <ul class="topics">
+                <li>Special Session: Open data and Open Source software for Geospatial Applications</li>
+                <li>WebGIS and Geospatial Databases</li>
+                <li>Surveying Techniques and Practice</li>
+                <li>Other topics</li>
+            </ul>  
+        </div>
+
+
 </div>
 
 <br>
-<br id="track_date">
-
-<div id="dates" class="container-fluid">
-	<div class="container">
-	<h2 id="datesTitle" class="text-center">Important Dates</h2>
-		<div class="timeline timeline-with-arrows blue-yellow-yellow">
-			<div class="timeline-block">
-				<div id="callTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-bullhorn fa-2x"></i></div>
-				<div class="timeline-content">
-					<h3 class="text-center"><b>Call for Extended Abstracts</b></h3>
-					<div class="timeline-date"><h4>February 23, 2016</h4></div>
-				</div>
-			</div>
-			<div class="timeline-block">
-				<div id="deadTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-hourglass-end fa-2x"></i></div>
-				<div class="timeline-content">
-					<h3 class="text-center"><b>Deadline of Abstract Submission</b></h3>
-					<div class="timeline-date"><h4>March 23, 2016</h4></div>
-				</div>
-			</div>
-			<div class="timeline-block">
-				<div id="notTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-check fa-2x"></i></div>
-				<div class="timeline-content">
-					<h3 class="text-center"><b>Notice of Acceptance</b></h3>
-					<div class="timeline-date"><h4>March 30, 2016</h4></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div id="venue" class="row">
-    <div id="venueBuild" class="col-sm-6">
-    <div class="row venuePic">
-    	<center>
-    		<h3>University of the Philippines Diliman <br>April 20-22, 2016</h3>
-    	</center>	
-    </div>
-    </div>
-    <div id="map" class="col-sm-6"></div>
-</div>
-
 
 <div id="contact" class="row">
 	<center>
@@ -287,6 +444,10 @@
 
     $("#submitBtn").on('click', function(){
       window.open("https://script.google.com/macros/s/AKfycbwUMCKiRNq206lSPEpg-rcFJOcKtZB101tzDbp4gUyL55XtE9eg/exec","_self");
+    });
+
+    $("#regBtn, #ebi_btn, #reg_btn, #und_btn").on('click', function(){
+      window.open("https://script.google.com/macros/s/AKfycbw4eebcbjMTrkX8h9EbWhRpYLl3MnPz7s4CelPMdXGIyibKQOIz/exec","_self");
     });
 
     $("#liAbstract").on('click', function(){

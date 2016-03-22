@@ -1,5 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
 <!-- Material Design fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -39,25 +40,82 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="index.html">PHILGEOS 2016</a>
+            <a class="navbar-brand page-scroll" href="index.html"><img id="pglogo" src="/images/pglogo.png" alt="PHILGEOS 2016"><span id="pglogoname" >PHILGEOS 2016</span></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active">
-                  <a class="page-scroll" href="#intro-header">Home</a>
+              <li class="dropdown">
+                <a aria-expanded="true" href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">PhilGEOS 2016
+                  <b class="caret"></b>
+                  <div class="ripple-container"></div>
+                </a>
+                <ul id="pg16_dropdown" class="dropdown-menu">
+                  <li>
+                    <a class="page-scroll" href="#about">
+                      About PhilGEOS
+                    <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="submitBtn">
+                      Submit Abstract
+                    </a>
+                    <div class="ripple-container"></div>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#regBtn">
+                      Register
+                    </a>
+                    <div class="ripple-container"></div>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a class="page-scroll" href="#dates">
+                      Important dates
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#rates">
+                      Rates
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#venue">
+                      Venue
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li id="liAbstract" class="" >
-                  <a class="page-scroll" href="#themeDesc">Submit Abstract</a>
+              <li id="program_dropdown" class="dropdown">
+                <a aria-expanded="true" href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Program
+                  <b class="caret"></b>
+                  <div class="ripple-container"></div>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="page-scroll" href="javascript:void(0)">Tentative Program
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="javascript:void(0)">Speakers</a>
+                    <div class="ripple-container"></div>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="track_session">Tracks and Special Sessions</a>
+                    <div class="ripple-container"></div>
+                  </li>
+                </ul>
               </li>
               <li class="">
-                  <a class="page-scroll" href="#track_session">Tracks & Special Sessions</a>
+                  <a class="page-scroll" href="#Sponsors">Sponsors</a>
               </li>
               <li class="">
-                  <a class="page-scroll" href="#sTracks">Important Dates</a>
+                  <a class="page-scroll" href="#other_events">Related Events</a>
               </li>
               <li class="">
-                  <a class="page-scroll" href="#venue">Venue</a>
+                  <a class="page-scroll" href="#contact">Contact</a>
               </li>
             </ul>
         </div>
@@ -65,6 +123,10 @@
     </div>
     <!-- /.container -->
 </nav>
+
+
+<br id="track_date">
+
 
 
   
@@ -99,9 +161,6 @@
 
 
 <br>
-<br id="track_date">
-
-
 
 
 
@@ -161,6 +220,10 @@
 
     $("#submitBtn").on('click', function(){
       window.open("https://script.google.com/macros/s/AKfycbwUMCKiRNq206lSPEpg-rcFJOcKtZB101tzDbp4gUyL55XtE9eg/exec","_self");
+    });
+
+    $("#regBtn, #ebi_btn, #reg_btn, #und_btn").on('click', function(){
+      window.open("https://script.google.com/macros/s/AKfycbw4eebcbjMTrkX8h9EbWhRpYLl3MnPz7s4CelPMdXGIyibKQOIz/exec","_self");
     });
 
     $("#liAbstract").on('click', function(){
