@@ -575,3 +575,86 @@ p.absText{
 #imageSources{
     cursor: pointer;
 }
+
+/*--Program--*/
+#program{
+    height:45%;
+    overflow-y:scroll;
+}
+
+#programTitle{
+    margin-top:3%;
+    font-family: 'Arvo',serif;
+}
+
+#program li{
+    width:50%;
+}
+
+#program li.active{
+    background-color: RGBA(85, 85, 85, 0.66);
+}
+
+#program_1_2 li{
+    width: 25%;
+    background-color: orange;
+}
+
+#program_1_2{
+    margin-bottom:15px;
+}
+
+.time_col{
+    width:10%;
+}
+
+.full_cols{
+    background-color: #0a950a;
+    color:white;
+}
+
+.full_cols_break{
+    background-color: rgba(255, 165, 0, 0.57);
+    color: #272525;
+    text-transform: uppercase; 
+}
+
+#program table{
+    position:relative;
+    height:95%;
+}
+
+/*--Speakers--*/
+#speakers{
+    height:50%;
+    background-color: rgba(215, 221, 227, 0.6);
+    color:#241c1c;
+}
+#speakersTitle{
+    font-family: 'Arvo', serif;
+    margin-top:5%;
+    margin-bottom:3%;
+}
+
+.speaker_card{
+    width:46%;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: white;
+    padding: 2%;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 3px rgb(150, 145, 145);
+    margin:2%;
+    height:400px;
+}
+
+.speaker_name_aff{
+    width:35%;
+}
+.speaker_title_abs{
+    width:65%;
+}
+.speaker_abs{
+    max-height: 350px;
+    overflow-y:scroll;
+    padding-right: 5%;
+}
