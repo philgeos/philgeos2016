@@ -211,7 +211,7 @@ p.absText{
 
 .mainHead{
     background-color:black;
-    background-image: url('/philgeos2016/images/earth.jpg');
+    background-image: url('/images/earth.jpg');
     background-size:cover;
 }
 
@@ -258,7 +258,7 @@ p.absText{
 }
 #about{
     height: 25%;
-    background-image: url('/philgeos2016/images/2015.jpg');
+    background-image: url('/images/2015.jpg');
     background-attachment: fixed;
     background-size: cover;
     padding:0%;
@@ -310,19 +310,19 @@ p.absText{
 
 #synergy{
     background-image: url('vcgi.vermont.gov/sites/vcgi/files/aboutvcgi/lidar/LiDAR_ptcloud_CentralPark_NYC.jpg');
-    background-image: url('/philgeos2016/images/lidar.jpg');
+    background-image: url('/images/lidar.jpg');
     background-size:cover;
 }
 
 #space{
     background-image: url('http://www.wired.com/images_blogs/wiredscience/2012/01/Hubblepretty.jpg');
-    background-image: url('/philgeos2016/images/gnssEx.jpg');
+    background-image: url('/images/gnssEx.jpg');
     background-size:cover;
 }
 
 #other{
     background-image: url('http://www.ourgeo.co.za/wp-content/uploads/2016/01/geospatial-services-copy.jpg');
-    background-image: url('/philgeos2016/images/geos.jpg');
+    background-image: url('/images/geos.jpg');
     background-size:cover;
 }
 
@@ -335,31 +335,31 @@ p.absText{
 
 /*#rs{
     background-image: url('http://www.labgis.uerj.br/wordpress/wp-content/uploads/2014/12/NDVI-NDVI-class1.jpg');
-    background-image: url('/philgeos2016/images/rs.jpg');
+    background-image: url('/images/rs.jpg');
     background-size:cover;
 }
 
 #gis{
     background-image: url('http://balaarka.com/wp-content/uploads/2015/09/J_tbf_71-1024x549.jpg');
-    background-image: url('/philgeos2016/images/gis.jpg');
+    background-image: url('/images/gis.jpg');
     background-size:cover;
 }
 
 #lidar{
     background-image: url('vcgi.vermont.gov/sites/vcgi/files/aboutvcgi/lidar/LiDAR_ptcloud_CentralPark_NYC.jpg');
-    background-image: url('/philgeos2016/images/lidar.jpg');
+    background-image: url('/images/lidar.jpg');
     background-size:cover;
 }
 
 #gnss{
     background-image: url('http://www.wired.com/images_blogs/wiredscience/2012/01/Hubblepretty.jpg');
-    background-image: url('/philgeos2016/images/gnss.jpg');
+    background-image: url('/images/gnss.jpg');
     background-size:cover;
 }
 
 #oapps{
     background-image: url('http://www.earthyes.org/uploads/1/2/9/3/12938430/794869063.jpg');
-    background-image: url('/philgeos2016/images/oapps.jpg');
+    background-image: url('/images/oapps.jpg');
     background-size:cover;
 }
 
@@ -410,18 +410,18 @@ p.absText{
 
 #gnssEx{
     background-image: url('http://www.insidegnss.com/auto/popupimage/IOV-04B-HR_CMYK.jpg');
-    background-image: url('/philgeos2016/images/gnssEx.jpg');
+    background-image: url('/images/gnssEx.jpg');
     background-size:cover;
 }
 
 #micro{
-    background-image: url('/philgeos2016/images/micro.jpg');
+    background-image: url('/images/micro.jpg');
     background-size:cover;
 }
 
 #geod{
     background-image: url('http://www.jsg.utexas.edu/news/files/Millard-Canyon-Thrust-Looking-North-BRIGHTER-ARROWS.jpg');
-    background-image: url('/philgeos2016/images/geod.jpg');
+    background-image: url('/images/geod.jpg');
     background-size:cover;
 }
 */
@@ -520,7 +520,7 @@ p.absText{
 
 #venueBuild{
     background-image: url('http://teammanilalifestyle.com/tm2013.06/wp-content/uploads/2015/03/finders-keepers-academic-oval-up-diliman.jpg');
-    background-image: url('/philgeos2016/images/upd.jpg');
+    background-image: url('/images/upd.jpg');
 /*    background-attachment: fixed;*/
     background-size: cover;
     height: 300px;
@@ -627,7 +627,7 @@ p.absText{
 /*--Speakers--*/
 #speakers{
     height:50%;
-    background-color: rgba(215, 221, 227, 0.6);
+    background-color: white;
     color:#241c1c;
 }
 #speakersTitle{
@@ -644,7 +644,7 @@ p.absText{
     border-radius: 6px;
     box-shadow: 1px 1px 3px 3px rgb(150, 145, 145);
     margin:2%;
-    height:400px;
+    max-height: 400px;
 }
 
 .speaker_name_aff{
@@ -653,8 +653,8 @@ p.absText{
 .speaker_title_abs{
     width:65%;
 }
-.speaker_abs{
+/*.speaker_abs{
     max-height: 350px;
     overflow-y:scroll;
     padding-right: 5%;
-}
+}*/
