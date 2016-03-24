@@ -2,7 +2,6 @@ body {
     font-family: 'Verdana', sans-serif;
     background-color: white;
     overflow-x: hidden;
-    height:2000px;
     display:block;
 }
 
@@ -49,7 +48,7 @@ header{
     color:white;   
 }
 
-#pg16_dropdown a:hover,#program_dropdown a:hover{
+#pg16_dropdown a:hover,#program_dropdown a:hover, #events_dropdown a:hover{
     background-color: black;
     color:white;  
 }
@@ -561,6 +560,11 @@ p.absText{
 }
 
 /*--footer--*/
+/*#pg_footer{
+    position:absolute;
+    bottom:0px;
+}*/
+
 #hrFooter{
     opacity:0.2;
     margin-top:40px;
@@ -626,7 +630,7 @@ p.absText{
 
 /*--Speakers--*/
 #speakers{
-    height:50%;
+    height:53%;
     background-color: white;
     color:#241c1c;
 }
@@ -658,3 +662,13 @@ p.absText{
     overflow-y:scroll;
     padding-right: 5%;
 }*/
+
+/*--other events--*/
+
+.blog{
+    margin-top: 8%;
+}
+
+.blog_date_time{
+    width:60%;
+}
