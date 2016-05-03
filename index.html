@@ -24,7 +24,7 @@
 <!-- Other Styles -->
 <link rel="stylesheet" type="text/css" href="/philgeos2016/static/timelined/css/timeline.css">
 
-<link rel="stylesheet" href="/philgeos2016/static/style.css">
+<link rel="stylesheet" href="./philgeos2016/static/style.css">
 <!-- <link rel="stylesheet" type="text/css" href='/philgeos2016/static/css/style.css'/> -->
 
 <title>PHILGEOS 2016</title>
@@ -119,9 +119,16 @@
                   </li>
                   <li>
                   
-                    <a class="page-scroll" href="#speakers">
+                    <a class="page-scroll" href="speaker">
                   
                     Speakers</a>
+                    <div class="ripple-container"></div>
+                  </li>
+                  <li>
+                  
+                    <a class="page-scroll" href="#postconf">
+                  
+                    Post Conference Events</a>
                     <div class="ripple-container"></div>
                   </li>
                   <li>
@@ -131,11 +138,16 @@
                     Tracks and Special Sessions</a>
                     <div class="ripple-container"></div>
                   </li>
+                  <li>
+                    <a class="page-scroll" href="http://dge.upd.edu.ph/philgeos2016/blog/postertemplate">
+                    Poster Template</a>
+                    <div class="ripple-container"></div>
+                  </li>
                 </ul>
               </li>
               <li class="">
                 
-                  <a class="page-scroll" href="#sponsors">
+                  <a class="page-scroll" href="#sponsor">
                 
                   Sponsors</a>
               </li>
@@ -148,6 +160,8 @@
                   <li class="">
                   
                       <a class="page-scroll" href="blog/natcongee2016">NatConGEE 2016</a>
+                      <a class="page-scroll" href="blog/ideathon">Ideathon</a>
+                      <a class="page-scroll" href="blog/foss4g">FOSS4G</a>
                   
                   </li>
                 </ul>
@@ -182,10 +196,10 @@
         				</center>
         				<hr>
     					<br>
-                    	<h1>Call for Abstracts</h1>
+                    	<h1>Call for Abstracts </h1>
                     	<p class="absText">Extended Abstract submission is now open.</p>
                         <p class="absText">The abstract sample with the required formatting can be found <a id="linkSample">here.</a></p>
-                        <p class="absText">Deadline of submission is on March 23, 2016.</p>
+                        <p class="absText">Deadline of submission is on <strike style="color:grey;"><i>March 23, 2016</i></strike>  April 11, 2016.</p>
                         <br>
                         <div href="javascript:void(0)" id="submitBtn" class="btn btn-raised btn-default">Submit Abstract <i class="fa fa-angle-down fa-lg"></i>
                             <div class="ripple-container"></div>
@@ -206,9 +220,14 @@
     
     <div id="about" class="row">
         <div id="about_op" class="container-fluid">
-        <h2 id='aboutTitle'>About PhilGEOS</h2>
-        <p>The University of the Philippines Department of Geodetic Engineering (UP DGE) and the UP Training Centre for Applied Geodesy and Photogrammetry (UP TCAGP) have been organising the Philippine Geomatics Symposium  or PhilGEOS since 2012. It was envisioned to be a yearly national symposium for Geomatics educators, researchers, practitioners and all users of geospatial data and technology.</p>
-        <p>PhilGEOS was first staged in November 2012 (PhilGEOS 2012) with the theme <a href="https://philgeos2012.wordpress.com/">“Philippine Geomatics: Practice, Application and Accomplishments”</a>. Last year, PhilGEOS had two special symposiums - <a href="http://dge.upd.edu.ph/philgeos2015/">PhilGEOS GNSS (Global Navigation Satellite Systems) and PhilGEOS UAS (Unmanned Aerial Systems Mapping)</a>. The two focused symposiums aimed at disseminating GNSS and UAS related studies and applications.</p>
+          <div id="about_div_logo">
+            <img id="pg_new_logo" src="/philgeos2016/images/philgeos_logo.png" style="height: auto; width:80%;">
+          </div>
+          <div id="about_div_desc">
+            <h2 id='aboutTitle'>About PhilGEOS</h2>
+            <p>The University of the Philippines Department of Geodetic Engineering (UP DGE) and the UP Training Centre for Applied Geodesy and Photogrammetry (UP TCAGP) have been organising the Philippine Geomatics Symposium  or PhilGEOS since 2012. It was envisioned to be a yearly national symposium for Geomatics educators, researchers, practitioners and all users of geospatial data and technology.</p>
+            <p>PhilGEOS was first staged in November 2012 (PhilGEOS 2012) with the theme <a href="https://philgeos2012.wordpress.com/">“Philippine Geomatics: Practice, Application and Accomplishments”</a>. Last year, PhilGEOS had two special symposiums - <a href="http://dge.upd.edu.ph/philgeos2015/">PhilGEOS GNSS (Global Navigation Satellite Systems) and PhilGEOS UAS (Unmanned Aerial Systems Mapping)</a>. The two focused symposiums aimed at disseminating GNSS and UAS related studies and applications.</p>
+        </div>
         </div>
     </div>
     
@@ -230,14 +249,14 @@
     				<div id="deadTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-hourglass-end fa-2x"></i></div>
     				<div class="timeline-content">
     					<h3 class="text-center">Deadline of Abstract Submission</h3>
-    					<div class="timeline-date"><h4>March 23, 2016</h4></div>
+    					<div class="timeline-date"><h4><strike class="small" style="color:grey;"><i>March 23, 2016</i></strike> April 11, 2016</h4></div>
     				</div>
     			</div>
     			<div class="timeline-block">
     				<div id="notTime" class="timeline-icon timeline-icon-hide-border"><i class="fa fa-check fa-2x"></i></div>
     				<div class="timeline-content">
     					<h3 class="text-center">Notice of Acceptance</h3>
-    					<div class="timeline-date"><h4>March 30, 2016</h4></div>
+    					<div class="timeline-date"><h4><strike class="small" style="color:grey;"><i>March 30, 2016</i></strike> April 14, 2016</h4></div>
     				</div>
     			</div>
     		</div>
@@ -253,7 +272,7 @@
                         </div>
                         <button id="ebi_btn" type="button" class="rate_reg btn btn-success">Register</button>
                     </div>
-                    <p class="text-center"><i>*until March 23, 2016</i></p>
+                    <p class="text-center"><i>*until <strike class="small" style="color:grey;"><i> March 23, 2016</i></strike> <br>April 1, 2016</i></p>
                 </div>
                 <div class="col-md-4 ratesDiv">
                     <div id="reg" class="well">
@@ -285,7 +304,7 @@
         <div id="venueBuild" class="col-sm-6">
         <div class="row venuePic">
         	<center>
-        		<h3>University of the Philippines Diliman <br>April 20-22, 2016</h3>
+        		<h3>National Institute of Physics<br>University of the Philippines Diliman <br>April 20-22, 2016</h3>
         	</center>	
         </div>
         </div>
@@ -372,26 +391,26 @@
                             </tr>
                             <tr>
                               <td>10:30 - 11:00</td>
-                              <td class="text-center">National Space Development Program (tentative)</td>
+                              <td class="text-center">Creating a National Space Agency: Current Development and Future Challenges</td>
                               <td colspan="2">
-                                <!-- <strong><i>Dr. Rogel Mari Sese (tentative)</i></strong>
-                                <p>Program Leader, National SPACE Development Program</p> -->
+                                <strong><i>Dr. Rogel Mari Sese</i></strong>
+                                <p>Program Leader, National SPACE Development Program</p>
                               </td>
                             </tr>
                             <tr>
                               <td>11:00 - 11:30</td>
-                              <td class="text-center">Development of the First Philippine Microsatellite (tentative)</td>
+                              <td class="text-center">Development of the First Philippine Microsatellite (tentative title)</td>
                               <td colspan="2">
-                                <!-- <strong><i>Dr. Joel Joseph S. Marciano, Jr. (tentative)</i></strong>
-                                <p>Program Leader, Development of Philippine Scientific Earth Observation Microsatellite (PHL-MICROSAT) Program</p> -->
+                                <strong><i>Dr. Joel Joseph S. Marciano, Jr.</i></strong>
+                                <p>Program Leader, Development of Philippine Scientific Earth Observation Microsatellite (PHL-MICROSAT) Program</p>
                               </td>
                             </tr>
                             <tr>
                               <td>11:30 - 12:00</td>
-                              <td class="text-center">National Policy on Space Technology Development (tentative)</td>
+                              <td class="text-center"></td>
                               <td colspan="2">
-                                <!-- <strong><i>Dr. Carlos Primo David (tentative)</i></strong>
-                                <p>Executive Director, Philippine Council for Industry, Energy and Emerging Technology Research and Development</p> -->
+                                <strong><i>Dr. Carlos Primo David</i></strong>
+                                <p>Executive Director, Philippine Council for Industry, Energy and Emerging Technology Research and Development</p>
                               </td>
                             </tr>
                             <tr>
@@ -498,18 +517,18 @@
                             </tr>
                             <tr>
                               <td>11:00 - 11:30</td>
-                              <td class="text-center">Geodetic Applications in Geodynamics (tentative)</td>
+                              <td class="text-center">Geodesy in Geodynamics: Revealing Unseen Perspectives of the Mobile Earth</td>
                               <td colspan="2">
                                 <strong><i>Dr. Gerald Galgana</i></strong>
-                                <p></p>
+                                <p>Visiting Scientist, UP Department of Geodetic Engineering (DOST Balik-Scientist)</p>
                               </td>
                             </tr>
                             <tr>
                               <td>11:30 - 12:00</td>
-                              <!-- <td class="text-center">Data Science (tentative)</td>
+                              <td class="text-center">Data Science x GIS: Better Together</td>
                               <td colspan="2">
-                                <strong><i>Dr. Reinabelle Reyes (tentative)</i></strong>
-                                <p></p> -->
+                                <strong><i>Dr. Reinabelle Reyes</i></strong>
+                                <p>Data Science Consultant</p>
                               </td>
                             </tr>
                             <tr>
@@ -597,81 +616,21 @@
     
 
     
-    <div id="speakers" class="row">
-        <h2 id="speakersTitle" class="text-center">Speakers</h2>
-        <div class="col-md-6 speaker_card">
-            <div class="col-md-4 speaker_name_aff">
-                <img src="/philgeos2016/images/Nagai.jpg" class="img-responsive img-rounded"/>
-                <h4 class="speaker_name">Dr. Masahiko Nagai</h4>
-                <h5 class="speaker_aff">University of Tokyo</h5>
-            </div>
-            <div class="col-md-8 speaker_title_abs">
-                <!-- <h3 class="speaker_title">Expertise</h3> -->
-                <p class="speaker_abs">Dr. Nagai’s areas of specializations are Spatial Information Engineering, Remote Sensing, GIS, Image Processing, GPS and Mobile Mapping and Environmental Information Science, Data Interoperability, Ontology, and Standardization and Database Management
-                <br><br>
-                Dr. Nagai completed his Bachelor of Science in Professional Chemistry Option, College of Science and Technology, Department of Chemistry, St. Cloud State University, USA. He obtained his M.Sc. at AIT and doctorate from School of Engineering, the University of Tokyo.
-                <br><br>
-                Source: http://www.ait.ac.th
-                </p>
-
-                
-            </div>
+      <div id="postconf" class="container-fluid text-center">
+      <div id="postconf_row" class="row">
+        <h2>Post-Conference Events</h2>
+        <h4>April 22, 2016</h4>
+          <div class="col-md-6">
+            <a href="http://dge.upd.edu.ph/philgeos2016/blog/ideathon/"><h3><strong>Ideathon</strong></h3></a>
+            <a id="ideathon_btn" href="https://script.google.com/macros/s/AKfycbxyZmG5z6__xrpmRpElSuw6UT8wPnznRRfcL-NKlCZNVKg1q0M/exec" class="btn btn-info">Register to Ideathon<div class="ripple-container"></div></a>
+          </div>
+          <div class="col-md-6">
+            <a href="http://dge.upd.edu.ph/philgeos2016/blog/foss4g/"><h3><strong>FOSS4G Workshops</strong></h3></a>
+            <a id="foss4g_btn" href="https://script.google.com/macros/s/AKfycby71fIOn1El7Elvf483aPDolC5Yk9U_mW-P8EB1xsSRv5CNgn8I/exec" class="btn btn-info">Register to FOSS4G<div class="ripple-container"></div></a>
+          </div>
         </div>
-        <div class="col-md-6 speaker_card">
-            <div class="col-md-4 speaker_name_aff">
-                <img src="/philgeos2016/images/Kohtake_c.jpg" class="img-responsive img-rounded"/>
-                <h4 class="speaker_name">Dr. Naohiko Kohtake</h4>
-                <h5 class="speaker_aff">Associate Professor, Graduate School of System Design and Management,Keio University</h5>
-            </div>
-            <div class="col-md-8 speaker_title_abs">
-    <!--             <h3 class="speaker_title">Expertise</h3> -->
-                <p class="speaker_abs">Naohiko Kohtake is an associate professor and current director of Smart System Design Laboratory (http://www.ssdlab.org/) at Keio University where he is responsible for space system engineering and intelligent systems. He has worked in research and development on avionics systems for the H-IIA rocket at Japan Aerospace Exploration Agency, ubiquitous computing systems at Keio University, and on-board software at European Space Agency.
-                <br><br>
-                Source: http://www.sdm.keio.ac.jp/en/faculty/kohtake_n.html
-                </p>
-
-                
-            </div>
-        </div>
-        <div class="col-md-6 speaker_card">
-            <div class="col-md-4 speaker_name_aff">
-                <img src="/philgeos2016/images/Tiglao.jpg" class="img-responsive img-rounded"/>
-                <h4 class="speaker_name">Dr.  Noriel Christopher C. Tiglao</h4>
-                <h5 class="speaker_aff" style="font-size: 12px;">Associate Professor, National College of Public Administration & Governance, University of the Philippines Diliman</h5>
-            </div>
-            <div class="col-md-8 speaker_title_abs">
-        <!--             <h3 class="speaker_title">Expertise</h3> -->
-                <p class="speaker_abs">Dr. Noriel Christopher C. Tiglao, a civil engineer by profession, is an Associate Professor at the National College of Public Administration & Governance (NCPAG). He is also a senior fellow of the Pimentel Institute for Leadership & Governance and has served as the Director of the Center for Policy and Executive Development (CPED), the research arm of NCPAG concerned with policy and executive studies.
-                <br><br>
-    <!--             He has conducted research on transportation management and policy with the National Center for Transportation Studies (NCTS), having written the paper Economic Impact of Traffic Congestion in Metro Manila with Professor Ricardo Sigua. 
-                <br><br> -->
-                Source: http://ncpag.upd.edu.ph/about-ncpag/faculty/associate-professors/tiglao/
-                </p>
-
-                
-            </div>
-        </div>
-        <div class="col-md-6 speaker_card">
-            <div class="col-md-4 speaker_name_aff">
-                <img src="/philgeos2016/images/Galgana.jpg" class="img-responsive img-rounded"/>
-                <h4 class="speaker_name">Dr.  Gerald Galgana</h4>
-                <h5 class="speaker_aff" style="font-size: 12px;"></h5>
-            </div>
-            <div class="col-md-8 speaker_title_abs">
-        <!--             <h3 class="speaker_title">Expertise</h3> -->
-                <p class="speaker_abs">Scientist in AIR's Earthquake Research Group, where he is responsible for developing seismic hazard and kinematic block models. In particular, he has developed the Japan, Canada, and Philippine block models. He is currently a Visiting Scientist and was a Postdoctoral Research Fellow at the Lunar and Planetary Institute, Universities Space Research Association in Houston, Texas, where he worked on NASA planetary projects. He comes from Indiana University in Bloomington, Indiana, where he earned his M.S. and Ph.D. He received his B.S. in Geodetic Engineering and Graduate Diploma in R&D Management from the University of the Philippines. 
-                
-                </p>
-                <p style="font-size:11px;">Source: http://www.air-worldwide.com/Blog/Profiles/Gerald-Galgana/</p>
-
-                
-            </div>
-        </div>
-
-    </div>
-
+      </div>
     
-
 
     
     <div id="track_session" class="container-fluid">
@@ -721,6 +680,226 @@
 
     
 
+    
+    <div id="sponsor" class="row">
+      <h2 id="sponsorTitle">Sponsors</h2>
+
+        
+	
+	<div class="row platinum_sponsors">
+		<h3 class="text-center sponsorship"><strong>Platinum Sponsors</strong></h3>	
+	  	
+	  		
+	  		<div id=absurveying class="col-md-12 sponsor_logos text-center">
+	  			<div class="col-md-6">
+	  				<img src=http://dge.upd.edu.ph/philgeos2016/images/absurveying.png>
+	  			</div>
+	  			<div class="col-md-6">
+		  			<h2><strong>AB Surveying</strong></h2>
+		  			
+		  			
+		  				<h4><a href=http://www.absurveyingph.com><i class="fa fa-globe"></i> www.absurveyingph.com</a></h4>
+		  			
+
+		  			
+		  				<p><i class="fa fa-phone-square"></i> (+632) 570-2117</p>
+		  			
+
+		  			
+		  				<p><i class="fa fa-envelope"></i> info@absurveyingph.com</p>
+		  			
+
+		  			
+		  			</div>
+	  		</div>
+	  		
+	  
+	  		
+	  		<div id=brianna class="col-md-12 sponsor_logos text-center">
+	  			<div class="col-md-6">
+	  				<img src=http://dge.upd.edu.ph/philgeos2016/images/Brianna.jpg>
+	  			</div>
+	  			<div class="col-md-6">
+		  			<h2><strong>Brianna Survey Solutions</strong></h2>
+		  			
+		  			
+		  				<h4><a href=http://briannasurvey.com><i class="fa fa-globe"></i> briannasurvey.com</a></h4>
+		  			
+
+		  			
+		  				<p><i class="fa fa-phone-square"></i> (02) 925 0452</p>
+		  			
+
+		  			
+		  				<p><i class="fa fa-envelope"></i> info@briannasurvey.com</p>
+		  			
+
+		  			
+		  				<p><i class="fa fa-fax"></i> (02) 921 9037</p>
+		  			
+		  			</div>
+	  		</div>
+	  		
+	  
+	  		
+	  
+	  		
+	  
+	  		
+	  		<div id=pasco class="col-md-12 sponsor_logos text-center">
+	  			<div class="col-md-6">
+	  				<img src=http://dge.upd.edu.ph/philgeos2016/images/Pasco.png>
+	  			</div>
+	  			<div class="col-md-6">
+		  			<h2><strong>PASCO Philippines Corporation</strong></h2>
+		  			
+		  			
+		  				<h4><a href=https://www.pascoph.com/><i class="fa fa-globe"></i> www.pascoph.com</a></h4>
+		  			
+
+		  			
+		  				<p><i class="fa fa-phone-square"></i> + 63-2-914-4329</p>
+		  			
+
+		  			
+
+		  			
+		  				<p><i class="fa fa-fax"></i> + 63-2-914-4338</p>
+		  			
+		  			</div>
+	  		</div>
+	  		
+	  
+	  		
+	  
+	  		
+	  		<div id=rasa class="col-md-12 sponsor_logos text-center">
+	  			<div class="col-md-6">
+	  				<img src=http://dge.upd.edu.ph/philgeos2016/images/Rasa.png>
+	  			</div>
+	  			<div class="col-md-6">
+		  			<h2><strong>RASA Surveying</strong></h2>
+		  			
+		  			
+		  				<h4><a href=http://www.rasasurvey.com><i class="fa fa-globe"></i> www.rasasurvey.com</a></h4>
+		  			
+
+		  			
+
+		  			
+
+		  			
+		  			</div>
+	  		</div>
+	  		
+	  
+	  		
+	  		<div id=sitech class="col-md-12 sponsor_logos text-center">
+	  			<div class="col-md-6">
+	  				<img src=http://dge.upd.edu.ph/philgeos2016/images/SITECH.jpg>
+	  			</div>
+	  			<div class="col-md-6">
+		  			<h2><strong>Sitech</strong></h2>
+		  			
+		  			
+		  				<h4><a href=http://www.sitech-phl.com/><i class="fa fa-globe"></i> www.sitech-phl.com</a></h4>
+		  			
+
+		  			
+		  				<p><i class="fa fa-phone-square"></i> +63(2) 656-7908</p>
+		  			
+
+		  			
+		  				<p><i class="fa fa-envelope"></i> info@SITECH-PHL.com</p>
+		  			
+
+		  			
+		  			</div>
+	  		</div>
+	  		
+	  
+	</div>
+	<div class="row gold_sponsors">	
+		<h3 class="text-center sponsorship"><strong>Gold Sponsors</strong></h3>		
+	  	
+	  		
+	  
+	  		
+	  
+	  		
+	  		<div id=certeza class="col-md-6 sponsor_logos">
+	  			<div class="col-md-4"><img src=http://dge.upd.edu.ph/philgeos2016/images/Certeza.png></div>
+	  			<div class="col-md-8">
+		  			<h3>Certeza Infosys Corporation</h3>
+
+		  			
+		  				<h4><a href=http://www.certezainfosys.com><i class="fa fa-globe"></i> www.certezainfosys.com</a></h4>
+		  			
+		  			
+		  				<p><i class="fa fa-phone-square"></i> (632) 721-2178  |  (632) 721-0113</p>
+		  			
+		  			
+		  				<p><i class="fa fa-envelope"></i> information@certezainfosys.com</p>
+		  			
+		  			
+		  				<p><i class="fa fa-fax"></i> (632) 727-0940</p>
+		  			
+	  			</div> 	     
+	  		</div>
+	  		
+	  
+	  		
+	  		<div id=ffcruz class="col-md-6 sponsor_logos">
+	  			<div class="col-md-4"><img src=http://dge.upd.edu.ph/philgeos2016/images/Ffcruz.png></div>
+	  			<div class="col-md-8">
+		  			<h3>F.F Cruz Co., Inc</h3>
+
+		  			
+		  				<h4><a href=http://www.ffcruz.com.ph/><i class="fa fa-globe"></i> www.ffcruz.com.ph</a></h4>
+		  			
+		  			
+		  				<p><i class="fa fa-phone-square"></i> 927-3324</p>
+		  			
+		  			
+		  			
+	  			</div> 	     
+	  		</div>
+	  		
+	  
+	  		
+	  
+	  		
+	  		<div id=rainbow class="col-md-6 sponsor_logos">
+	  			<div class="col-md-4"><img src=http://dge.upd.edu.ph/philgeos2016/images/Rainbow.png></div>
+	  			<div class="col-md-8">
+		  			<h3>RAINBOWGEO SCIENTIFIC CORPORATION</h3>
+
+		  			
+		  				<h4><a href=http://www.rainbowgeo.com><i class="fa fa-globe"></i> rainbowgeo.com</a></h4>
+		  			
+		  			
+		  				<p><i class="fa fa-phone-square"></i> +632 731 3820 / +632 731 7866</p>
+		  			
+		  			
+		  			
+		  				<p><i class="fa fa-fax"></i> +632 732 4778</p>
+		  			
+	  			</div> 	     
+	  		</div>
+	  		
+	  
+	  		
+	  
+	  		
+	  
+	</div>
+
+
+          
+    </div>
+ 
+    
+
 
 
     
@@ -729,7 +908,7 @@
     		<h3>MH 216, Department of Geodetic Engineering, College of Engineering, University of the Philippines Diliman</h3>
     		<h4><i class="fa fa-phone"></i> +63-2-9818500 local 3124 / +63-3-920-8924 </h4>
     		<h4><i class="fa fa-envelope"></i> philgeos2016@gmail.com</h4>
-    		<img id="imgContact" class="img-responsive" src="images/dgelogo.png">
+    		<img id="imgContact" class="img-responsive" src="/philgeos2016/images/dgelogo.png">
         </center>	
     </div>
     
@@ -788,12 +967,12 @@
            keyboardPanOffset: 0,
            scrollWheelZoom:false
        });
-       map.setView([14.656487159193421, 121.06958001852037], 16);
+       map.setView([14.6486564, 121.0730777], 18);
 
        var basemap = OpenStreetMap_France;
        map.addLayer(basemap);
 
-       var marker= L.marker([14.656487159193421, 121.06958001852037]);
+       var marker= L.marker([14.6486564, 121.0730777]);
        marker.addTo(map);
 
     $("#venueBuild").on("mouseover",function(){

@@ -1,0 +1,789 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: white;
+    overflow-x: hidden;
+    display:block;
+}
+
+header{
+    height:42%;
+    transistion: height 1s;
+}
+
+#pgNav{
+    background-color: rgba(12, 12, 12,0.5);
+    padding-left: 5%;
+    padding-right: 5%;
+    color:white;
+}
+
+#intro-header{
+    height:100%;
+}
+
+#announceDiv{
+    padding-top: 7%;
+    padding-bottom: 5%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.64);
+    transition:padding-top 1s;
+}
+
+#pgTitle{
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(249, 238, 112);
+}
+
+#pglogoname{
+    display:none;
+}
+
+.dropdown-menu{
+    background-color: rgba(26, 27, 29, 0.8);
+}
+
+.dropdown-menu > li > a{
+    color:white;   
+}
+
+#pg16_dropdown a:hover,#program_dropdown a:hover, #events_dropdown a:hover{
+    background-color: black;
+    color:white;  
+}
+
+
+
+@media only screen and (min-width:1766px) and (max-width:2000px){
+    header{
+        height:44%    
+    }
+    #announceDiv{
+        padding-top:8%;
+    }
+}
+
+@media only screen and (min-width:1548px) and (max-width:1765px){
+    #announceDiv{
+        padding-top:9%;
+    }
+}
+
+@media only screen and (min-width:1440px) and (max-width:1547px){
+    #announceDiv{
+        padding-top:10%;
+        padding-bottom:8%;
+    }
+}
+
+@media only screen and (min-width:1150px) and (max-width:1439px){
+    #announceDiv{
+        padding-top:9%;
+        padding-bottom:8%;
+    }
+    #pgTitle{
+        font-size:35px;
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width:1149px){
+    header{
+        height:48%;
+    }
+    #announceDiv{
+        padding-top:16%;
+        padding-bottom:8%;
+    }
+    #pgTitle{
+        font-size:35px;
+    }
+
+    #pglogo{
+        display:none;
+    }
+    #pglogoname{
+        display:block;
+    }
+}
+
+@media only screen and (min-width:750px) and (max-width:899px){
+    header{
+        height:48%;
+    }
+    #announceDiv{
+        padding-top:20%;
+        padding-bottom:8%;
+    }
+    #pgTitle{
+        font-size:35px;
+    }
+    #pglogo{
+        display:none;
+    }
+    #pglogoname{
+        display:block;
+    }
+}
+
+@media only screen and (min-width:570px) and (max-width:749px){
+    header{
+        height:48%;
+    }
+    #announceDiv{
+        padding-top:15%;
+        padding-bottom:8%;
+    }
+    #pgTitle{
+        font-size:35px;
+    }
+    #pglogo{
+        display:none;
+    }
+    #pglogoname{
+        display:block;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:569px){
+    header{
+        height:48%;
+    }
+    #announceDiv{
+        padding-top:14%;
+        padding-bottom:8%;
+    }
+    #pgTitle{
+        font-size:25px;
+    }
+    .site-heading h1{
+        font-size:25px;
+    }
+}
+
+#venueName a{
+    text-decoration: none;
+    color:white;
+}
+
+.site-heading h4{
+    color:white;
+    letter-spacing:3px;
+    margin-bottom: 1px
+}
+
+.site-heading h3{
+    margin-top:0px;
+    color:#84c6f6;
+}
+.site-heading h1{
+    margin-top:1%;
+    color:#84c6f6;
+}
+
+.site-heading p{
+    width:75%;
+    margin-top:1%;
+    color:white;
+}
+
+p.absText{
+    margin-bottom:2px;
+    margin-top:2px;
+}
+
+.absText a{
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.absText a:hover{
+    font-weight:600;
+    color:white;
+}
+
+.site-heading hr{
+    opacity:0.2;
+    margin-top:10px;
+    border-top: 2px solid #6F6F6F;
+}
+
+.mainHead{
+    background-color:black;
+    background-image: url('/philgeos2016/images/earth.jpg');
+    background-size:cover;
+}
+
+.subheading{
+    color:RGBA(158, 147, 147, 0.69);
+    letter-spacing: 5px;
+}
+
+#submitBtn, #regBtn{
+    background-color: RGBA(238, 238, 238, 0);
+    color:white;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+#submitBtn i{
+    margin-left:5%;
+}
+
+#pglogo{
+    position: absolute;
+    top: 7%;
+    width: 500%;
+}
+
+#themeDesc{
+    margin-bottom:2%;
+    color:grey;
+    width:100%;
+}
+
+.row{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*--About PhilGEOS--*/
+#about_op{
+    padding: 5%;
+    padding-top:5%;
+    width:100%;
+    height:100%;
+    background-color:rgba(187, 243, 231, 0.69);
+}
+#about{
+    height: 25%;
+    background-image: url('/philgeos2016/images/2015.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding:0%;
+}
+
+
+#aboutTitle{
+    margin-bottom: 30px;
+    color: rgb(33, 29, 29);
+    font-family: 'Arvo',serif;
+}
+#about p{
+    font-size: 17px;
+    width: 100%;
+}
+
+#about a{
+    text-decoration:none;
+    color:#376ba5;
+}
+
+#about_div_logo{
+    width: 20%;
+    float: left;
+}
+
+#pg_new_logo{
+    border-radius: 20px;
+    box-shadow: 2px 1px 1px 0px grey; 
+}
+/*--tracks--*/
+#track_session{
+    background-color: #e6e0e0;
+    padding: 2%;
+    height:35%;
+}
+
+.sessions{
+    height:70%;
+/*    margin:2% 2%;
+    width:25%;*/
+    color:white;
+    margin-top: 2%;
+}
+
+.sessions h3{
+    font-weight:700;
+    padding: 3%;
+    background-color:rgba(12, 11, 11, 0.63);
+}
+
+.topics{
+    margin:10% auto;
+    background-color:rgba(12, 11, 11, 0.63);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#synergy{
+    background-image: url('vcgi.vermont.gov/sites/vcgi/files/aboutvcgi/lidar/LiDAR_ptcloud_CentralPark_NYC.jpg');
+    background-image: url('/philgeos2016/images/lidar.jpg');
+    background-size:cover;
+}
+
+#space{
+    background-image: url('http://www.wired.com/philgeos2016/images_blogs/wiredscience/2012/01/Hubblepretty.jpg');
+    background-image: url('/philgeos2016/images/gnssEx.jpg');
+    background-size:cover;
+}
+
+#other{
+    background-image: url('http://www.ourgeo.co.za/wp-content/uploads/2016/01/geospatial-services-copy.jpg');
+    background-image: url('/philgeos2016/images/geos.jpg');
+    background-size:cover;
+}
+
+#tracksTitle{
+    margin-bottom: 20px;
+    margin-top: 2%;
+    color: rgb(33, 29, 29);
+    font-family: 'Arvo',serif;
+}
+
+/*#rs{
+    background-image: url('http://www.labgis.uerj.br/wordpress/wp-content/uploads/2014/12/NDVI-NDVI-class1.jpg');
+    background-image: url('/philgeos2016/images/rs.jpg');
+    background-size:cover;
+}
+
+#gis{
+    background-image: url('http://balaarka.com/wp-content/uploads/2015/09/J_tbf_71-1024x549.jpg');
+    background-image: url('/philgeos2016/images/gis.jpg');
+    background-size:cover;
+}
+
+#lidar{
+    background-image: url('vcgi.vermont.gov/sites/vcgi/files/aboutvcgi/lidar/LiDAR_ptcloud_CentralPark_NYC.jpg');
+    background-image: url('/philgeos2016/images/lidar.jpg');
+    background-size:cover;
+}
+
+#gnss{
+    background-image: url('http://www.wired.com/philgeos2016/images_blogs/wiredscience/2012/01/Hubblepretty.jpg');
+    background-image: url('/philgeos2016/images/gnss.jpg');
+    background-size:cover;
+}
+
+#oapps{
+    background-image: url('http://www.earthyes.org/uploads/1/2/9/3/12938430/794869063.jpg');
+    background-image: url('/philgeos2016/images/oapps.jpg');
+    background-size:cover;
+}
+
+.tracks{
+    height:100%;
+    cursor: pointer;
+    color:white;
+    letter-spacing: 2px;
+}
+
+#oapps h3{
+    margin-top:5%;
+}
+
+.rtracks{
+    height: 100%;
+    background-color: rgba(45, 43, 43, 0.54);
+    padding-top: 10%;
+
+}
+
+.oaTrack:hover{
+    height: 100%;
+    background-color: rgba(45, 43, 43, 0.54);
+}
+
+.ssTracks{
+    height: 100%;
+    background-color: rgba(45, 43, 43, 0.54);
+    padding-top: 10%;
+}
+
+.ssTracks:hover{
+    background-color: rgba(45, 43, 43, 0.84);
+}
+
+.rTracks:hover{
+    background-color: rgba(45, 43, 43, 0.84);
+}
+
+#tracksTitle{
+    margin-bottom: 30px;
+    margin-top: 5%;
+    color: rgb(33, 29, 29);
+    font-family: 'Arvo',serif;
+}
+
+
+#gnssEx{
+    background-image: url('http://www.insidegnss.com/auto/popupimage/IOV-04B-HR_CMYK.jpg');
+    background-image: url('/philgeos2016/images/gnssEx.jpg');
+    background-size:cover;
+}
+
+#micro{
+    background-image: url('/philgeos2016/images/micro.jpg');
+    background-size:cover;
+}
+
+#geod{
+    background-image: url('http://www.jsg.utexas.edu/news/files/Millard-Canyon-Thrust-Looking-North-BRIGHTER-ARROWS.jpg');
+    background-image: url('/philgeos2016/images/geod.jpg');
+    background-size:cover;
+}
+*/
+/*--timeline--*/
+#dates{
+    padding: 2% 3%;
+}
+#datesTitle,#ratesTitle{
+    color: rgb(5, 5, 5);
+    font-family: 'Arvo',serif;
+}
+
+.dates_rates{
+    width:100%;
+}
+
+.timeline .timeline-icon i.fa{
+    color:white;
+}
+.timeline .timeline-date {
+    width: 90%;
+    margin-left:20%;
+}
+
+.timeline-content h3{
+    margin-top:10px;
+}
+
+.timeline .timeline-icon{
+    width: 64px;
+    height: 64px;
+    margin-left: -32px;
+    margin-top: -4px;
+}
+
+.timeline .timeline-icon i.fa, .timeline .timeline-icon img {
+    line-height: 64px;
+}
+
+.timeline .timeline-content{
+    padding:5px;
+    width:42%;
+}
+
+#callTime{
+    background-color:rgb(15, 161, 219);
+}
+
+#deadTime{
+    background-color:rgb(186, 60, 60);
+}
+
+#notTime{
+    background-color:rgb(110, 192, 23);
+}
+
+/*--Rates--*/
+#ratesTitle{
+    margin-bottom: 8%
+}
+.ratesDiv{
+    height:200px
+}
+
+#ebi,#reg,#und{
+    background-color:#247ae9;
+    color:white;
+}
+.ratesDiv h4{
+    margin-bottom: 2%
+}
+
+.rateDays{
+    margin-top:10%;
+}
+
+#ebi button,#reg button,#und button{
+    background-color:white;
+    color:#126ce0;
+    margin-top: 8%
+}
+
+#ebi button:hover,#reg button:hover,#und button:hover{
+    background-color: #ccc8c8;
+}
+
+
+/*--Venue--*/
+
+#venue{
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-top:5%;
+    line-height: 300px; 
+}
+
+#venueBuild{
+    background-image: url('http://teammanilalifestyle.com/tm2013.06/wp-content/uploads/2015/03/finders-keepers-academic-oval-up-diliman.jpg');
+    background-image: url('/philgeos2016/images/upd.jpg');
+/*    background-attachment: fixed;*/
+    background-size: cover;
+    height: 300px;
+    line-height: 300px; 
+}
+
+#venueBuild h3{
+    color:white;
+    font-weight:600;
+    width:80%;
+}
+
+.venuePic{
+    height: 100%;
+    background-color: rgba(114, 108, 108, 0.64);
+    padding-top: 15%;
+    cursor: pointer;
+}
+
+.venuePic:hover{
+    background-color: rgba(11, 8, 8, 0.85);
+}
+
+#map{
+    height:300px;
+}
+
+
+/*--Contact--*/
+#contact{
+    height: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#imgContact{
+    width:10%;
+}
+
+/*--footer--*/
+/*#pg_footer{
+    position:absolute;
+    bottom:0px;
+}*/
+
+#hrFooter{
+    opacity:0.2;
+    margin-top:40px;
+    border-top: 2px solid #6F6F6F;
+    width:30%;
+}
+
+.footer p{
+    margin-bottom: 20px
+}
+
+#imageSources{
+    cursor: pointer;
+}
+
+/*--Program--*/
+#program{
+    height:38%;
+    overflow-y:scroll;
+}
+
+#programTitle{
+    margin-top:3%;
+    font-family: 'Arvo',serif;
+}
+
+#program li{
+    width:50%;
+}
+
+#program li.active{
+    background-color: RGBA(85, 85, 85, 0.66);
+}
+
+#program_1_2 li{
+    width: 25%;
+    background-color: orange;
+}
+
+#program_1_2{
+    margin-bottom:15px;
+}
+
+.time_col{
+    width:10%;
+}
+
+.full_cols{
+    background-color: #0a950a;
+    color:white;
+}
+
+.full_cols_break{
+    background-color: rgba(255, 165, 0, 0.57);
+    color: #272525;
+    text-transform: uppercase; 
+}
+
+#program table{
+    position:relative;
+    height:100px;
+}
+
+/*--other events--*/
+
+.blog{
+    margin-top: 8%;
+}
+
+.blog_date_time{
+    width:60%;
+}
+
+/*--speaker main--*/
+.speaker_main{
+    margin: 8% auto 1% auto;
+}
+
+#speakerTitle{
+    margin-bottom: 30px;
+    color: rgb(33, 29, 29);
+    font-family: 'Arvo',serif;
+}
+
+.img-round{
+    border-radius: 300px;
+    height: 200px;
+    margin: 20px auto 0px auto;
+}
+
+.speaker_roll{
+    margin-bottom:20px;
+}
+
+.speaker_roll a{
+    text-decoration: none;
+}
+
+.talk_a_desc{
+    text-decoration: none;
+    color:#201E1E;
+}
+
+.talk_a_desc:hover{
+    color:grey;
+}
+
+.speaker_prof_btn{
+    font-size: 10px;
+}
+
+#speaker_roll_pagination{
+    margin:1% auto;
+}
+
+/*--Speaker Post--*/
+.speaker_post_row{
+    margin-top:10%;
+}
+
+.img-rounded-corner{
+    border-radius:15px;
+}
+
+.btn-rounded-corners{
+    border-radius:20px;
+}
+
+/*--Sponsor--*/
+#sponsorTitle{
+    margin-bottom: 3%;
+    margin-top: 2%;
+    color: rgb(33, 29, 29);
+    font-family: 'Arvo',serif;
+}
+
+.platinum_sponsors img{
+    width: 100%;
+}
+
+.gold_sponsors img{
+    width:100%
+}
+.gold_sponsors{
+    margin-top:2%;
+}
+
+#sponsor{
+    padding-bottom:30px
+}
+
+.sponsor_logos h3{
+    color: rgba(11, 50, 108, 0.83);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.sponsorship{
+    font-family: 'Arvo', serif;
+    margin-bottom: 1%;
+}
+
+#postconf{
+    height:200px;
+    background-color: black;
+    color: white;
+    background-image: url('http://dge.upd.edu.ph/philgeos2016/images/oapps.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+#postconf_row{
+    padding:0px;
+    background-color:rgba(0,0,0,0.4);
+    height: 100%;
+}
+
+#postconf h2{
+    font-family: 'Arvo', serif;
+}
+
+#postconf h3{
+    color: white;
+    margin-top: 2%;
+    letter-spacing: 3px;
+    transition: letter-spacing 1s ease;
+}
+
+#postconf h3:hover{
+    letter-spacing: 5px;
+    color:whitesmoke;
+}
+
+#postconf a{
+    text-decoration: none;
+}
+
+#postconf a:hover{
+    text-decoration: none;
+}
+
+#ideathon_btn,#foss4g_btn{
+    color:white;
+    margin: 1px 1px;
+}
+
+#postconf_row div{
+    margin-top:-2%;
+}
+
+
+
+
